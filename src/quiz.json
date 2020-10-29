@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "question": "how are you?",
+        "skipable": false,
+        "asnwers": [
+            {
+                "answer": "pretty good",
+                "goto": 2
+            },
+            {
+                "answer": "not as good as it could be",
+                "goto": 3
+            }
+        ]
+    }
+]
