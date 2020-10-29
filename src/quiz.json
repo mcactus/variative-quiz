@@ -1,16 +1,40 @@
 [
     {
         "id": 1,
-        "question": "how are you?",
+        "question": "Что Вы хотели бы подключить? Только Интернет или Интернет + ТВ?",
         "skipable": false,
         "asnwers": [
             {
-                "answer": "pretty good",
-                "goto": 2
+                "answer": "Только интернет",
+                "goto": 2,
+                "exclude": 4
             },
             {
-                "answer": "not as good as it could be",
-                "goto": 3
+                "answer": "Интернет и ТВ",
+                "goto": 2,
+                "exclude": 0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Как Вы подходите к выбору тарифа - Вам важнее качество или ценовой барьер?",
+        "skipable": false,
+        "asnwers": [
+            {
+                "answer": "Мне важно качество",
+                "goto": 3,
+                "exclude": 0
+            },
+            {
+                "answer": "Мне важна стоимость",
+                "goto": 3,
+                "exclude": 0
+            },
+            {
+                "answer": "Мне важна золотая середина",
+                "goto": 3,
+                "exclude": 0
             }
         ]
     }
